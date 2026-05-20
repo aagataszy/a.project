@@ -1,0 +1,2 @@
+read.csv(file = "data/inflammation-01.csv", header = FALSE)
+

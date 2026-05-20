@@ -1,0 +1,104 @@
+---
+title: "Global Offences in 2025"
+author: "Agata Szymanska"
+format: revealjs
+editor: visual
+---
+
+## Introduction
+
+This presentation shows an overview of crime (offences) in the world in 2025.
+
+Data is illustrative for learning purposes.
+
+------------------------------------------------------------------------
+
+## What are offences?
+
+Offences include: - Theft - Assault - Fraud - Cybercrime
+
+------------------------------------------------------------------------
+
+## Example data (2025)
+
+```{r}
+# Create sample dataset
+offences <- data.frame(
+  region = c("Europe", "Asia", "North America", "South America", "Africa"),
+  cases = c(3200000, 5100000, 2800000, 2300000, 4100000)
+)
+
+offences
+```
+
+------------------------------------------------------------------------
+
+## Bar chart of offences
+
+```{r}
+# Simple bar plot
+barplot(
+  offences$cases,
+  names.arg = offences$region,
+  main = "Number of offences by region (2025)",
+  ylab = "Number of cases",
+  las = 2
+)
+```
+
+------------------------------------------------------------------------
+
+## Observations
+
+-   Asia shows the highest number of recorded offences\
+-   Africa and Europe also have high numbers\
+-   South America has the lowest in this dataset
+
+------------------------------------------------------------------------
+
+## Types of offences (example)
+
+```{r}
+types <- data.frame(
+  type = c("Theft", "Assault", "Fraud", "Cybercrime"),
+  cases = c(7000000, 5000000, 3000000, 2000000)
+)
+
+barplot(
+  types$cases,
+  names.arg = types$type,
+  main = "Types of offences worldwide (2025)",
+  col = "lightblue"
+)
+```
+
+------------------------------------------------------------------------
+
+## Conclusion
+
+-   Crime levels vary by region\
+-   Economic and social factors influence offence rates\
+-   Cybercrime is growing rapidly worldwide
+
+------------------------------------------------------------------------
+
+## Thank you
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```

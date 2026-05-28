@@ -1,0 +1,114 @@
+---
+title: "Research Report"
+author: "Agata Szymańska"
+format: pdf
+editor: visual
+---
+
+# Introduction
+
+Crime and offences remain major global challenges in modern society. Governments, researchers and international organizations analyse crime statistics in order to improve public safety and understand social problems.
+
+This report examines selected categories of global offences and presents simplified example statistics related to crime trends in different world regions. The analysis was conducted using R and Quarto.
+
+# Types of offences
+
+Offences are illegal acts that violate the law. Different countries classify offences differently depending on their legal systems.
+
+The main categories discussed in this report include: - property crimes - violent crimes - cybercrime - financial crimes - drug-related offences
+
+Property crimes include theft, burglary and vandalism, while violent crimes include assault, homicide and domestic violence.
+
+Cybercrime has become increasingly important because of technological development and growing internet usage.
+
+# Example dataset
+
+The following dataset presents simplified example data showing estimated offence cases in different world regions.
+
+```{r}
+global_data <- data.frame(
+  Region = c("Asia", "Africa", "Europe", "North America", "South America"),
+  Cases_Millions = c(5.1, 4.1, 3.2, 2.8, 2.3)
+)
+
+global_data
+```
+# Offences by region
+The data can be visualised using a bar chart.
+barplot(
+  global_data$Cases_Millions,
+  names.arg = global_data$Region,
+  main = "Estimated offences by region (millions)",
+  ylab = "Cases in millions",
+  las = 2
+)
+The graph suggests that Asia records the highest number of offences in this example dataset. One possible explanation is the large population size and high level of urbanisation.
+Africa and Europe also show relatively high numbers of cases, while South America presents the lowest value in this simplified example.
+Types of offences worldwide
+The next dataset presents selected offence categories.
+crime_types <- data.frame(
+  Type = c("Theft", "Assault", "Fraud", "Cybercrime", "Drug offences"),
+  Cases_Millions = c(7, 5, 3, 2, 1.5)
+)
+
+crime_types
+Comparison of offence categories
+barplot(
+  crime_types$Cases_Millions,
+  names.arg = crime_types$Type,
+  main = "Global offence categories",
+  ylab = "Cases in millions",
+  las = 2
+)
+The chart demonstrates that theft and assault remain among the most common offence categories worldwide.
+
+Cybercrime also continues to grow rapidly because of technological development and digital communication.
+
+Factors influencing crime
+Several social and economic factors may influence crime levels, including:
+poverty
+unemployment
+lack of education
+inequality
+political instability
+
+Urbanisation and population growth may also contribute to higher crime rates in some regions.
+Technology and crime
+Technology has both positive and negative effects on crime.
+
+Positive effects include:
+improved surveillance systems
+digital evidence collection
+faster communication between law enforcement agencies
+
+Negative effects include:
+cyberattacks
+online fraud
+identity theft
+financial scams
+
+International cooperation
+Countries cooperate internationally to reduce crime and improve security. Organizations such as INTERPOL support information sharing and international investigations.
+International cooperation is especially important in fighting cybercrime and financial offences that cross national borders.
+
+Limitations of the data
+The statistics used in this report are simplified illustrative examples.
+Real-world crime statistics may vary depending on:
+reporting systems
+legal definitions
+differences between countries
+underreporting of crimes
+
+This means that actual crime levels may be higher than official data suggests.
+
+# Conclusion
+
+Global offences remain a significant issue in the modern world. Different types of crime require different prevention strategies and international cooperation.
+
+The analysis shows that:
+- crime affects all regions of the world
+- theft and assault remain common offences
+- cybercrime continues to increase
+- technology changes the nature of modern crime
+
+Using R and Quarto makes it possible to analyse and present crime-related data in a clear and organised way.

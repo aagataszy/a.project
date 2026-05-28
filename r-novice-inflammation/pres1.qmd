@@ -1,0 +1,269 @@
+---
+title: "Global Offences in the Modern World"
+subtitle: "Crime Trends and Statistics"
+author: Agata Szymańska 
+format: revealjs
+theme: moon 
+
+---
+
+## Introduction
+
+Crime and offences remain major global challenges in 2025.
+
+Governments, international organizations and researchers study crime data to:
+- improve public safety
+- understand social problems
+- reduce violence and illegal activity
+- develop prevention strategies
+
+Global offences affect economies, communities and everyday life.
+
+---
+
+
+## What are offences?
+
+An offence is an illegal act that violates the law.
+
+Offences can be divided into several categories:
+- Property crimes
+- Violent crimes
+- Financial crimes
+- Cybercrime
+- Drug-related offences
+
+Different countries may classify offences differently depending on legal systems.
+
+---
+
+## Property crimes
+
+Property crimes involve stealing or damaging property.
+
+Examples include:
+- Theft
+- Burglary
+- Robbery
+- Vehicle theft
+- Vandalism
+
+Property crimes are among the most commonly reported offences worldwide.
+
+---
+
+## Violent crimes
+
+Violent crimes involve physical harm or threats against people.
+
+Examples:
+- Assault
+- Homicide
+- Domestic violence
+- Kidnapping
+
+These offences often have serious social and psychological consequences.
+
+---
+
+## Cybercrime
+
+Cybercrime continues to grow rapidly in 2025.
+
+Common cyber offences include:
+- Identity theft
+- Online fraud
+- Hacking
+- Data breaches
+- Financial scams
+
+The increase in internet use and digital banking has created more opportunities for cybercriminals.
+
+---
+
+## Global offence statistics
+
+```{r}
+global_data <- data.frame(
+  Region = c("Asia", "Africa", "Europe", "North America", "South America"),
+  Cases_Millions = c(5.1, 4.1, 3.2, 2.8, 2.3)
+)
+
+global_data
+```
+
+The table above presents simplified example data showing estimated offence cases by region.
+
+---
+
+## Example data (illustrative)
+
+```{r}
+offences <- data.frame(
+  region = c("Europe", "Asia", "North America", "South America", "Africa"),
+  cases = c(3200000, 5100000, 2800000, 2300000, 4100000)
+)
+
+offences
+```
+
+---
+
+## Offences by region
+
+```{r}
+barplot(
+  global_data$Cases_Millions,
+  names.arg = global_data$Region,
+  main = "Estimated offences by region (millions)",
+  ylab = "Cases in millions",
+  las = 2
+)
+```
+
+Asia records the largest number of offences in this example dataset due to its large population.
+
+---
+
+## Key observations
+
+- Asia shows the highest number of cases in this dataset  
+- Africa and Europe also have high levels  
+- South America shows the lowest  
+
+---
+
+## Types of offences worldwide
+
+```{r}
+crime_types <- data.frame(
+  Type = c("Theft", "Assault", "Fraud", "Cybercrime", "Drug offences"),
+  Cases_Millions = c(7, 5, 3, 2, 1.5)
+)
+
+crime_types
+```
+
+Theft and assault remain among the most common offences globally.
+
+---
+
+## Important note
+
+These numbers are simplified examples.
+
+Real-world crime data varies by country, reporting systems and year.
+
+---
+
+## Comparison of offence types
+
+```{r}
+barplot(
+  crime_types$Cases_Millions,
+  names.arg = crime_types$Type,
+  main = "Global offence categories",
+  ylab = "Cases in millions",
+  las = 2
+)
+```
+
+Cybercrime continues to increase every year because of technological development.
+
+---
+
+## Factors influencing crime
+
+Several factors may increase crime rates:
+- Poverty
+- Unemployment
+- Lack of education
+- Social inequality
+- Political instability
+
+Urbanization and population growth can also affect crime levels.
+
+---
+
+## The role of technology
+
+Technology has both positive and negative effects on crime.
+
+Positive effects:
+- Better surveillance systems
+- Faster communication
+- Digital evidence collection
+
+Negative effects:
+- Online scams
+- Cyberattacks
+- Identity theft
+
+---
+
+## International cooperation
+
+Countries cooperate to fight global crime through:
+- Information sharing
+- International police organizations
+- Cybersecurity partnerships
+- Border control systems
+
+Organizations such as INTERPOL support international investigations.
+
+---
+
+## Crime prevention
+
+Governments use different methods to reduce offences:
+- Education programs
+- Community policing
+- Stronger cybersecurity
+- Social support systems
+
+Crime prevention is often more effective than punishment alone.
+
+---
+
+## Challenges in crime reporting
+
+Crime statistics are not always fully accurate.
+
+Some offences are:
+- unreported
+- classified differently
+- difficult to investigate
+
+This means real crime levels may be higher than official statistics.
+
+---
+
+## Future trends
+
+Experts predict that:
+- cybercrime will continue to grow
+- financial fraud will become more advanced
+- digital security will become increasingly important
+
+Artificial intelligence may also influence future criminal activity.
+
+---
+
+## Conclusion
+
+Global offences remain an important issue in modern society.
+
+Key points:
+- Crime affects all regions of the world
+- Different offence types require different solutions
+- Technology changes the nature of crime
+- International cooperation is essential
+
+Understanding crime data helps societies develop better prevention strategies.
+
+---
+
+## Thank you
+
+Questions?
+

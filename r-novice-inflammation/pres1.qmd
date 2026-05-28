@@ -1,10 +1,9 @@
 ---
 title: "Global Offences in the Modern World"
 subtitle: "Crime Trends and Statistics"
-author: Agata Szymańska
+author: Agata Szymańska 
 format: revealjs
 theme: moon 
-
 
 ---
 

@@ -242,7 +242,7 @@ This means real crime levels may be higher than official statistics.
 
 Experts predict that:
 - cybercrime will continue to grow
-- financial fraud will become more advanced
+- financial fraud will become more advanced 
 - digital security will become increasingly important
 
 Artificial intelligence may also influence future criminal activity.
@@ -274,5 +274,4 @@ Understanding crime data helps societies develop better prevention strategies.
 
 ## Thank you
 
-Questions?
 

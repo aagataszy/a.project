@@ -242,12 +242,21 @@ This means real crime levels may be higher than official statistics.
 
 Experts predict that:
 - cybercrime will continue to grow
-- financial fraud will become more advanced
+- financial fraud will become more advanced 
 - digital security will become increasingly important
 
 Artificial intelligence may also influence future criminal activity.
 
 ---
+
+## Statistical summary
+
+```{r}
+summary(global_data$Cases_Millions)
+```
+
+The summary statistics show variation in offence levels between regions. Asia records the highest number of cases, while South America records the lowest value in this example dataset.
+
 
 ## Conclusion
 
@@ -265,5 +274,4 @@ Understanding crime data helps societies develop better prevention strategies.
 
 ## Thank you
 
-Questions?
 

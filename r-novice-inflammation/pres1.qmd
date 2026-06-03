@@ -249,6 +249,15 @@ Artificial intelligence may also influence future criminal activity.
 
 ---
 
+## Statistical summary
+
+```{r}
+summary(global_data$Cases_Millions)
+```
+
+The summary statistics show variation in offence levels between regions. Asia records the highest number of cases, while South America records the lowest value in this example dataset.
+
+
 ## Conclusion
 
 Global offences remain an important issue in modern society.

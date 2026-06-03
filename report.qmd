@@ -34,7 +34,10 @@ global_data <- data.frame(
 global_data
 ```
 # Offences by region
+
 The data can be visualised using a bar chart.
+
+```{r}
 barplot(
   global_data$Cases_Millions,
   names.arg = global_data$Region,
@@ -42,16 +45,34 @@ barplot(
   ylab = "Cases in millions",
   las = 2
 )
+```
+# Statistical summary
+
+```{r}
+summary(global_data$Cases_Millions)
+
+mean(global_data$Cases_Millions)
+
+max(global_data$Cases_Millions)
+
+min(global_data$Cases_Millions)
+```
+
+The average number of offences across the regions is presented above. Asia records the highest value, while South America records the lowest value in this example dataset.
 The graph suggests that Asia records the highest number of offences in this example dataset. One possible explanation is the large population size and high level of urbanisation.
 Africa and Europe also show relatively high numbers of cases, while South America presents the lowest value in this simplified example.
-Types of offences worldwide
+# Types of offences worldwide
+
 The next dataset presents selected offence categories.
+
+```{r}
 crime_types <- data.frame(
   Type = c("Theft", "Assault", "Fraud", "Cybercrime", "Drug offences"),
   Cases_Millions = c(7, 5, 3, 2, 1.5)
 )
 
 crime_types
+```
 Comparison of offence categories
 barplot(
   crime_types$Cases_Millions,
@@ -61,6 +82,14 @@ barplot(
   las = 2
 )
 The chart demonstrates that theft and assault remain among the most common offence categories worldwide.
+
+```{r}
+pie(
+  crime_types$Cases_Millions,
+  labels = crime_types$Type,
+  main = "Share of offence categories"
+)
+```
 
 Cybercrime also continues to grow rapidly because of technological development and digital communication.
 
